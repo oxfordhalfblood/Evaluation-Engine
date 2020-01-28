@@ -1,0 +1,11 @@
+pip freeze > requirements.txt
+docker build . -t docker-example
+docker-compose build --no-cache
+docker-compose up -d
+docker ps -a
+docker run docker-example
+docker-compose down
+pip install mysql-connector-python-rf
+mysql -u root -p
+
+
