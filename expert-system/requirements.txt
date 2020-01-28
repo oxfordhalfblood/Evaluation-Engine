@@ -1,0 +1,9 @@
+asteval==0.9.18
+docker==4.1.0
+docker-compose==1.25.0
+entrypoints==0.2.3
+mysql-connector-python==8.0.19
+PyMySQL==0.9.3
+pytest==3.5.1
+simpleeval==0.9.10
+SQLAlchemy==1.2.7

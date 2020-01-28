@@ -1,0 +1,15 @@
+{
+  "name": "snowflake-scripts",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/scrmhub/snowflake-scripts.git"
+  },
+  "homepage": "https://bitbucket.org/scrmhub/snowflake-scripts#readme",
+  "devDependencies": {
+    "serverless-python-requirements": "^5.0.1"
+  },
+  "scripts": {
+    "test": "sls invoke local --function testHandler"
+  }
+}

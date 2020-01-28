@@ -1,0 +1,23 @@
+service: snowflake-scripts
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
+provider:
+  name: aws
+  runtime: python3.8
+  stage: ${opt:stage, 'dev'}
+  region: ap-southeast-2
+
+  environment:
+    ENV: ${self:provider.stage}
+    DEFAULT_REGION: ap-southeast-2
+
+functions:
+  testHandler:
+    handler: serverless.testHandler
+    memorySize: 256
+    timeout: 20
